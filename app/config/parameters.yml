@@ -1,0 +1,17 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_driver: pdo_mysql
+    database_host: mysql.hostinger.es
+    database_port: null
+    database_name: u740768103_aac
+    database_user: u740768103_root
+    database_password: "0501120608"
+    mailer_transport: mail    
+    mailer_host: mx1.hostinger.es
+    mailer_user: aac_registro@antoniolorenzo.esy.es
+    mailer_password: "0501120608"
+    locale: es
+    secret: abs110557ale210164
+    debug_toolbar: true
+    debug_redirects: false
+    use_assetic_controller: true
