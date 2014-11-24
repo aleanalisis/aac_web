@@ -1,0 +1,17 @@
+<IfModule mod_rewrite.c>
+    Options +FollowSymlinks
+    RewriteEngine On
+    #RewriteCond %{HTTP_HOST} ^antoniolorenzo.esy.es$ [NC,OR]
+    #RewriteCond %{HTTP_HOST} ^www.antoniolorenzo.esy.es$
+    RewriteCond %{REQUEST_URI} !^/web/.*$
+    RewriteRule ^(.*)$ /web/$1 [QSA,L]
+    # Explicitly disable rewriting for front controllers
+    #RewriteRule ^app_dev.php - [L]
+    RewriteRule ^web/app.php - [L]
+ 
+    RewriteCond %{REQUEST_FILENAME} !-f
+ 
+    # Change below before deploying to production
+    #RewriteRule ^(.*)$ /app.php [QSA,L]
+    RewriteRule ^(.*)$ web/app.php [QSA,L]
+</IfModule>

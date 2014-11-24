@@ -1,0 +1,12 @@
+#/web/bundles/
+/app/bootstrap*
+/app/cache/*
+/app/logs/*
+/vendor/
+#/app/config/parameters.yml
+!app/cache/.gitkeep
+!app/logs/.gitkeep
+/build/
+/nbproject/
+/bin/
+/composer.phar
