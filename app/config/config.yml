@@ -98,5 +98,5 @@ fos_user:
         confirmation:
             enabled:    true
     from_email:
-        address:        aac_registro@antoniolorenzo.esy.es
+        address:        aac_registro@aacweb.esy.es
         sender_name:    Aac registro de usuarios            
